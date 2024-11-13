@@ -1,0 +1,328 @@
+/* personalização geral das páginas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0b0620de;
+    color: #ffffff;
+}
+
+header {
+    background-color: #03045036;
+    color: #c9bdff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    
+}
+
+/* Estilo para a foto de perfil */
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.foto-perfil img {
+    width: 300px;
+    height: 400px;
+    border-radius: 50%;
+    border: 7px solid #03045036;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.botao-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    background-color: #bdaadd;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.botao-voltar:hover {
+    background-color: #451e5f;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+.nav-header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #03045000;
+}
+
+.nav-header ul li {
+    margin: 0 15px;
+    float: center;
+    width: 800px;
+    line-height: 20px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    max-width: 600px;
+    display: inline;
+}
+
+.nav-header ul li a {
+    color: #fff;
+    text-decoration: #000000;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.nav-header ul li a:hover {
+    background-color: #03032056;
+    border-radius: 0px;
+    border-radius: 40%;
+}
+
+/*nav*/
+
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: #1810388e;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* personalização do forms de contato */
+button {
+    background-color: #4a90e2;
+    color: #ececec;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+form textarea {
+    min-height: 100px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+/* personalização footer */
+footer {
+    background-color: #03045036;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-conteudo p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #cce7ff;
+}
+
+.footer-links i {
+    margin-right: 5px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* personalização de texto com imagens para a tela de conteúdos */
+/* Estilo do botão imagem */
+.button-image {
+    display: inline-block;
+    border: 2px solid #3366cc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Efeito ao passar o mouse */
+  .button-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Estilo da imagem dentro do botão */
+  .button-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* personalização dos textos para a tela de informações */
+section h2 {
+    color: #d1bef5;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+section ul li {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #ffffff;
+    line-height: 1.8;
+    font-size: 1em;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* personalização dos slides para a tela de conteúdos */
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cores de fundo para exemplo */
+.slide1 { background-color: #ff6666; }
+.slide2 { background-color: #66b3ff; }
+.slide3 { background-color: #99ff99; }
+
+/* Imagens dentro dos slides */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Botões de navegação */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
